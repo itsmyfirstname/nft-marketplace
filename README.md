@@ -1,4 +1,4 @@
-# nft-marketplace-starter-kit
+# NFT Marketplace 
 Please run npm install on the terminal to download the appropriate packages already defined to the package.json file. 
 Make sure you are in the source file. 
 
@@ -10,7 +10,23 @@ Make sure you are in the source file.
 
 **To run the development server on a local host scripts:** npm run start
 
-For truffle tests and console please consult the official Truffle documentaion for updates.
+For truffle tests and console please consult the official Truffle documentation for updates.
 
 
+## Truffle 
 
+### Base Commands
+
+`truffle init`
+Create base contract and migrations objects
+
+`truffle compile`
+scan contracts directory (if provided), and build json definitions
+
+`truffle migrate`
+Deploy to connected blockchain
+
+`truffle console`
+- set a var with the smart contract object 
+- `kryptoBird = await KryptoBird.deployed()`
+    - use await since javascript is synchronous, await makes it async
