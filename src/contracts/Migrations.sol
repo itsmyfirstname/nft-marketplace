@@ -14,14 +14,10 @@ contract Migrations {
   }
 
   function setCompleted(uint completed) public restricted {
-    /* */
     last_completed_migration = completed;
   }
 
   function upgrade(address new_address) public restricted {
-    /*
-    takes an address and creates a new migration contract, we then set as completed
-    */
     Migrations upgraded = Migrations(new_address);
     upgraded.setCompleted(last_completed_migration);
   }
